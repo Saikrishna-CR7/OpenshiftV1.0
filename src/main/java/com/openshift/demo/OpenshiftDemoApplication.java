@@ -17,7 +17,7 @@ public class OpenshiftDemoApplication {
 	
 	@GetMapping("/{input}")
 	public String welcome(@PathVariable String input){
-		return "Welcome .....with path variable.";
+		return "Welcome .....with path variable." + input;
 	}
 	
 	public static void main(String[] args) {
